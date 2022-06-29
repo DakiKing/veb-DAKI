@@ -1,0 +1,266 @@
+:root {
+    --bg-color: rgb(0, 0, 0);
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 24;
+  }
+.screen{
+    width: 800px;
+    margin: auto;
+    background-color: black;
+    border: 1px solid black;
+}
+  .screen p{
+    color: greenyellow;
+    text-shadow: 1px 1px 2px greenyellow, 0 0 0.1em greenyellow, 0 0 0.1em greenyellow;
+    text-align: left;
+    margin-left: 30px;
+  }
+#menu{
+    background-color: rgb(252, 252, 252);
+    color: black;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+#menu img{
+    height: 13px;
+    margin-left: -20px;
+}
+#x a{
+text-decoration: none;
+color: black;
+float: right;
+margin-top: -21px;
+
+padding-right: 6px;
+padding-left: 5px;
+padding-bottom: 1px;
+}
+#x a:hover{
+    background-color: red;
+    color: aliceblue;
+}
+#T p{
+    width: 300px;
+}
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    background: url(tumblr_pqqcmqSDyG1y1psm4o1_1280.webp);
+    text-align: center;
+    
+  }
+  .links {
+   float: right;
+   margin-right: 10px;
+  }
+  .links ul li {
+    list-style: none;
+   
+    
+  }
+  .links a{
+    color: greenyellow;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  h3,h4,h5,h2 {
+    position: absolute;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    color: greenyellow;
+    text-shadow: 1px 1px 2px greenyellow, 0 0 0.1em greenyellow, 0 0 0.1em greenyellow;
+    margin-left: 30px;
+  }
+  
+  
+  h2::before{
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 3s forwards;
+  }
+  
+  h2::before,
+  h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  h5::before,
+  h5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h5::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 0.5s forwards;
+  }
+  
+  h5::after {
+    width: 0.125em;
+    background: greenyellow;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 0.5s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  .subtitle {
+    color: greenyellow;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h3::before,
+  h3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+  }
+  
+  h3::before {
+    padding: 50px;
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 0.5s forwards;
+  }
+  
+  h3::after {
+    width: 0.125em;
+    background: greenyellow;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 0.5s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  .subtitle {
+    color: greenyellow;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h4::before,
+h4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h4::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 4s forwards;
+  }
+  
+  h4::after {
+    width: 0.125em;
+    background: greenyellow;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 4s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  .subtitle {
+    color: greenyellow;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+#S{
+    margin-left: 360px;
+    margin-top: -420px;
+}
+#S img{
+    padding-top: 50px;
+    width: 400px;
+    height: 300px;
+}
+h2{
+    margin-left: 250px;
+    
+}
